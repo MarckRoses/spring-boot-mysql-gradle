@@ -7,13 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.marck.spring.app.Models.CimplS;
 import com.marck.spring.app.Models.ClienteSImpl;
 import com.marck.spring.app.Models.Entity.Cliente;
 
 @Controller
 public class IndexController {
 	@Autowired
-	ClienteSImpl scliente;
+	CimplS scliente;
 	
 	@GetMapping("/")
 	public String Index(Model model) {
