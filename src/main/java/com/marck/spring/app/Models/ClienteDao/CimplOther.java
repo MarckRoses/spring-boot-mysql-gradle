@@ -29,6 +29,7 @@ public class CimplOther implements ICliente{
 	@Override
 	public List<Cliente> findAll() {
 		JdbcTemplate select= new JdbcTemplate(dataSource);
+		System.out.println("Todos los Clientes Seleccionados");
 		return select.query(SelectAll, new ClienteRow());
 	}
 
