@@ -39,7 +39,7 @@ public class CimplOther implements ICliente{
 		Cliente c= new Cliente();
 		c.setId(id);
 		Object o;
-		o=selectone.queryForObject(SelectOne, new ClienteRow(),new Cliente(id));
+		o=selectone.queryForObject(SelectOne, new ClienteRow(),id);
 		return c;
 	}
 
