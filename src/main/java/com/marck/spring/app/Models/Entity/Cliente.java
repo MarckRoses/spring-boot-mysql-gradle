@@ -1,8 +1,13 @@
 package com.marck.spring.app.Models.Entity;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
-public class Cliente {
+public class Cliente implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id; 
 	private String nombre;
 	private String apellido;
